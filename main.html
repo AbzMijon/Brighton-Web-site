@@ -25,20 +25,18 @@
                     <ul class="header__menu">
                         <li class="header__item"><a href="#" class="header__link">Главная</a></li>
                         <li class="header__item"><a href="#" class="header__link">Сообщения</a></li>
-                        <li class="header__item"><a href="#" class="header__link">Меню <i class="fa-solid fa-arrow-down"></i> </a></li>
+                        <li class="header__item"><a href="#" class="header__link">Меню <i class="fa-solid fa-angle-down"></i> </a></li>
                     </ul>
                 </nav>
                 <div class="header__profile">
                     <div class="header__notification">
                         <div class="header__bell"><i class="fa-solid fa-bell"></i></div>
+                    </div>
                         <div class="header__user">
-                            <div class="header__burger">
-                                <div class="header__line"></div>
-                            </div>
-                            <div class="header__icon"><i class="fa-solid fa-user"></i></div>
+                                <span class="burger__line"></span>
+                            <div class="header__icon"><i class="fa-solid fa-circle-user"></i></div>
                         </div>
                     </div>
-                </div>
                 <div class="header__burger-menu">
                     <ul class="header__burger-list">
                         <li class="header__burger-item"><a href="#" class="header__burger-link">Профиль</a></li>
@@ -57,20 +55,26 @@
                 <div class="notifications__body">
                     <h2 class="notifications__title">Уведомления</h2>
                     <ul class="notifications__row row">
-                        <li class="notifications__card col-xl-4 col-sm-12"><a href="#">
-                            <h4 class="notifications__card-title">Подтвердите важные данные</h4>
-                            <p class="notifications__subtitle">Необходимо для публикации товара</p>
-                        </a></li>
-                        <li class="notifications__card col-xl-4 col-sm-12"><a href="#">
-                            <h4 class="notifications__card-title">Подтвердите важные данные</h4>
-                            <p class="notifications__subtitle">Необходимо для публикации товара</p>
-                        </a></li>
-                        <li class="notifications__card col-xl-4 col-sm-12"><a href="#">
-                            <h4 class="notifications__card-title">Подтвердите важные данные</h4>
-                            <p class="notifications__subtitle">Необходимо для публикации товара</p>
-                        </a></li>
+                        <div class="col-xl-4">
+                            <li class="notifications__card"><a href="#">
+                                <h4 class="notifications__card-title">Подтвердите важные данные</h4>
+                                <p class="notifications__subtitle">Необходимо для публикации товара</p>
+                            </a></li>
+                        </div>
+                        <div class="col-xl-4">
+                            <li class="notifications__card"><a href="#">
+                                <h4 class="notifications__card-title">Подтвердите важные данные</h4>
+                                <p class="notifications__subtitle">Необходимо для публикации товара</p>
+                            </a></li>
+                        </div>
+                        <div class="col-xl-4">
+                            <li class="notifications__card"><a href="#">
+                                <h4 class="notifications__card-title">Подтвердите важные данные</h4>
+                                <p class="notifications__subtitle">Необходимо для публикации товара</p>
+                            </a></li>
+                        </div>
                     </ul>
-                    <a href="#" class="notifications__all">Посмотреть всё</a>
+                    <a href="#" class="notifications__all"><p>Посмотреть всё</p></a>
                 </div>
             </div>
         </section>
@@ -79,15 +83,21 @@
                 <div class="welcome__body">
                     <h2 class="welcome__title">Приветствуем</h2>
                     <ul class="welcome__row row">
-                        <li class="welcome__card col-xl-4"><a href="#">
-                            <h4 class="welcome__card-name">Подготовьтеськ приему первых гостей</h4>
-                        </a></li>
-                        <li class="welcome__card col-xl-4"><a href="#">
-                            <h4 class="welcome__card-name">Настройте календарь и расценки</h4>
-                        </a></li>
-                        <li class="welcome__card col-xl-4"><a href="#">
-                            <h4 class="welcome__card-name">Подтвердите как гости могут бронировать</h4>
-                        </a></li>
+                        <div class="col-xl-4">
+                            <li class="welcome__card welcome__card--guests"><a href="#">
+                                <h4 class="welcome__card-name">Подготовьтеськ приему первых гостей</h4>
+                            </a></li>
+                    </div>
+                    <div class="col-xl-4">
+                            <li class="welcome__card welcome__card--calendary"><a href="#">
+                                <h4 class="welcome__card-name">Настройте календарь и расценки</h4>
+                            </a></li>
+                        </div>
+                        <div class="col-xl-4">
+                            <li class="welcome__card welcome__card--bron"><a href="#">
+                                <h4 class="welcome__card-name">Подтвердите как гости могут бронировать</h4>
+                            </a></li>
+                        </div>
                     </ul>
                 </div>
             </div>
