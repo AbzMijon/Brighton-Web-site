@@ -343,15 +343,18 @@ h6,
     margin-left: 10px;
 }
 
+.objects__wrappper-card{
+    border-top: 1px solid #C4C4C4;
+}
+
 .objects__card {
     padding: 30px;
-    border-top: 1px solid #C4C4C4;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 15px;
 }
 
-.objects__card:last-child {
+.objects__wrapper-card:last-child {
     border-bottom: 1px solid #C4C4C4;
 }
 
@@ -373,4 +376,22 @@ h6,
     font-size: 14px;
     line-height: 18px;
     text-decoration: underline;
+}
+
+.news {
+    padding: 70px 0 100px 0;
+    background-color: #0C0C0C;
+    color: #fff;
+}
+.container {
+}
+.news__title {
+}
+.news__row {
+}
+.news__item {
+}
+.news__link {
+}
+.news__item-name {
 }
