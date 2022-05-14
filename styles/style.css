@@ -154,6 +154,19 @@ h6,
     display: flex;
 }
 
+/*Onclick header list*/
+.header__onclick-list {
+    display: none;
+    padding: 10px 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+}
+
+.header__onclick-item + .header__onclick-item {
+    margin-top: 10px;
+}
+
 .header__notification {
     cursor: pointer;
     border: 1px solid #BDBDBD;
@@ -527,6 +540,10 @@ h6,
     padding: 10px 15px;
 }
 
+.calendary__item-box:hover {
+    border: 3px solid #000;
+}
+
 .calendary__num {
     margin-bottom: 50px;
 }
@@ -603,4 +620,37 @@ h6,
     font-size: 15px;
     line-height: 17px;
     color: #222222;
+}
+
+/*NEW PAGE MESSAGE*/
+.message__burger {
+    display: inline-block;
+    position: relative;
+}
+
+.messages__burger-line {
+    position: absolute;
+    top: 45%;
+    left: 15px;
+    width: 15px;
+    height: 2.5px;
+    background-color: #000;
+    border-radius: 20px;
+}
+
+.messages__burger-line::before , 
+.messages__burger-line::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    background-color: #000;
+    height: 2.5px;
+    width: 15px;
+    border-radius: 20px;
+}
+.messages__burger-line::before {
+    top: 5px;
+}
+.messages__burger-line::after {
+    bottom: 5px;
 }
