@@ -488,12 +488,12 @@ h6,
 .calendary__body {
     border: 1px solid #C4C4C4;
     display: grid;
-    grid-template-columns:repeat(5, 1fr);
+    grid-template-columns:repeat(3, 1fr);
     grid-template-rows: auto;
 }
 
 .calendary__data-block {
-    grid-column: 1/5;
+    grid-column: 1/3;
     grid-row: 1/2;
     padding: 15px 15px 45px 30px;
 }
@@ -524,7 +524,7 @@ h6,
 }
 
 .calendary__days {
-    grid-column: 1/5;
+    grid-column: 1/3;
     grid-row: 2/3;
     display: grid;
     grid-template-columns: repeat(7,1fr);
@@ -553,7 +553,7 @@ h6,
 }
 
 .calendary__info {
-    grid-column: 5/6;
+    grid-column: 3/4;
     grid-row: 1/3;
 }
 
@@ -594,25 +594,25 @@ h6,
 }
 
 .calendary__settings-title {
-    margin-bottom: 1px;
+    margin-bottom: 5px;
 }
 
 .calendary__settings-text {
     font-size: 10px;
     color: #8B8B8B;
-    line-height: 14px;
+    line-height: 12px;
     margin-bottom: 30px;
 }
 
 .calendary__settings-btn {
     cursor: pointer;
-    padding: 10px 20px;
+    padding: 15px 20px;
     border: 0.5px solid #073937;
     border-radius: 10px;
 }
 
 .calendary__hide-title {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .calendary__add {
