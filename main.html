@@ -54,25 +54,19 @@
             <div class="container">
                 <div class="notifications__body">
                     <h2 class="notifications__title">Уведомления</h2>
-                    <ul class="notifications__row row">
-                        <div class="col-xl-4">
+                    <ul class="notifications__row">
                             <li class="notifications__card"><a href="#">
                                 <h4 class="notifications__card-title">Подтвердите важные данные</h4>
                                 <p class="notifications__subtitle">Необходимо для публикации товара</p>
                             </a></li>
-                        </div>
-                        <div class="col-xl-4">
                             <li class="notifications__card"><a href="#">
                                 <h4 class="notifications__card-title">Подтвердите важные данные</h4>
                                 <p class="notifications__subtitle">Необходимо для публикации товара</p>
                             </a></li>
-                        </div>
-                        <div class="col-xl-4">
                             <li class="notifications__card"><a href="#">
                                 <h4 class="notifications__card-title">Подтвердите важные данные</h4>
                                 <p class="notifications__subtitle">Необходимо для публикации товара</p>
                             </a></li>
-                        </div>
                     </ul>
                     <a href="#" class="notifications__all"><p>Посмотреть всё</p></a>
                 </div>
@@ -82,22 +76,18 @@
             <div class="container">
                 <div class="welcome__body">
                     <h2 class="welcome__title">Приветствуем</h2>
-                    <ul class="welcome__row row">
-                        <div class="col-xl-4">
-                            <li class="welcome__card welcome__card--guests"><a href="#">
+                    <ul class="welcome__row">
+                            <li class="welcome__card"><a href="#">
                                 <h4 class="welcome__card-name">Подготовьтеськ приему первых гостей</h4>
                             </a></li>
-                    </div>
-                    <div class="col-xl-4">
-                            <li class="welcome__card welcome__card--calendary"><a href="#">
+                            <li class="welcome__card"><a href="#">
                                 <h4 class="welcome__card-name">Настройте календарь и расценки</h4>
                             </a></li>
-                        </div>
-                        <div class="col-xl-4">
-                            <li class="welcome__card welcome__card--bron"><a href="#">
+
+                            <li class="welcome__card"><a href="#">
                                 <h4 class="welcome__card-name">Подтвердите как гости могут бронировать</h4>
                             </a></li>
-                        </div>
+
                     </ul>
                 </div>
             </div>
@@ -108,16 +98,27 @@
             </div>
             <div class="objects__layot">
                 <div class="container">
+                    <ul class="objects__card-titles">
+                        <li class="objects__card-title"><h5>Название</h5></li>
+                        <li class="objects__card-title"><h5>Статус</h5></li>
+                        <li class="objects__card-title">
+                            <h5>Заработано за период</h5>
+                            <p class="objects__data-name"> <i class="fa-solid fa-calculator"></i>11.04.2022-11.05.2022</p>
+                        </li>
+                        <li class="objects__card-title">Настройки<i class="fa-solid fa-sliders"></i></li>
+                    </ul>
                     <div class="objects__card">
                         <figure class="objects__picture">
                             <img src="./images/object1.jpg" alt="" class="objects__img">
-                            <figcaption class="objects__img-name">Квартира на Малой Бронной</figcaption>
+                            <figcaption class="objects__img-name title6">Квартира на Малой Бронной</figcaption>
                         </figure>
-                        <select class="objects__status" name="objectsStatus">
-                            <option value="select">Активно</option>
-                            <option value="select">Неактивно</option>
-                            <option value="select" selected>На модерации</option>
-                        </select>
+                        <div class="objects__wrap-status">
+                            <select class="objects__status" name="objectsStatus">
+                                <option value="select">Активно</option>
+                                <option value="select">Неактивно</option>
+                                <option value="select" selected>На модерации</option>
+                            </select>
+                        </div>
                         <div class="objects__price">
                             10000 ₽
                         </div>
@@ -126,13 +127,15 @@
                     <div class="objects__card">
                         <figure class="objects__picture">
                             <img src="./images/object1.jpg" alt="" class="objects__img">
-                            <figcaption class="objects__img-name">Квартира на проспекте Независимости с большими окнами</figcaption>
+                            <figcaption class="objects__img-name title6">Квартира на проспекте Независимости с большими окнами</figcaption>
                         </figure>
-                        <select class="objects__status" name="objectsStatus">
-                            <option value="select">Активно</option>
-                            <option value="select" selected>Неактивно</option>
-                            <option value="select">На модерации</option>
-                        </select>
+                        <div class="objects__wrap-status">
+                            <select class="objects__status" name="objectsStatus">
+                                <option value="select">Активно</option>
+                                <option value="select">Неактивно</option>
+                                <option value="select" selected>На модерации</option>
+                            </select>
+                        </div>
                         <div class="objects__price">
                             200 000 ₽
                         </div>
@@ -141,13 +144,15 @@
                     <div class="objects__card">
                         <figure class="objects__picture">
                             <img src="./images/object1.jpg" alt="" class="objects__img">
-                            <figcaption class="objects__img-name">Квартира3</figcaption>
+                            <figcaption class="objects__img-name title6">Квартира3</figcaption>
                         </figure>
-                        <select class="objects__status" name="objectsStatus">
-                            <option value="select">Активно</option>
-                            <option value="select">Неактивно</option>
-                            <option value="select" selected>На модерации</option>
-                        </select>
+                        <div class="objects__wrap-status">
+                            <select class="objects__status" name="objectsStatus">
+                                <option value="select">Активно</option>
+                                <option value="select">Неактивно</option>
+                                <option value="select" selected>На модерации</option>
+                            </select>
+                        </div>
                         <div class="objects__price">
                             200 000 ₽
                         </div>
@@ -166,17 +171,17 @@
         <section class="news">
             <div class="container">
                 <h2 class="news__title">Новости и советы по приему гостей</h2>
-                <ul class="news__row row">
-                    <li class="news__item col-xl-3 col-sm-12"><a href="#" class="news__link">
+                <ul class="news__row">
+                    <li class="news__item"><a href="#" class="news__link">
                         <h3 class="news__item-name">Привлеките внимание к объявлению</h3>
                     </a></li>
-                    <li class="news__item col-xl-3 col-sm-12"><a href="#" class="news__link">
+                    <li class="news__item"><a href="#" class="news__link">
                         <h3 class="news__item-name">Привлеките внимание к объявлению</h3>
                     </a></li>
-                    <li class="news__item col-xl-3 col-sm-12"><a href="#" class="news__link">
+                    <li class="news__item"><a href="#" class="news__link">
                         <h3 class="news__item-name">Привлеките внимание к объявлению</h3>
                     </a></li>
-                    <li class="news__item col-xl-3 col-sm-12"><a href="#" class="news__link">
+                    <li class="news__item"><a href="#" class="news__link">
                         <h3 class="news__item-name">Привлеките внимание к объявлению</h3>
                     </a></li>
                 </ul>
@@ -185,7 +190,7 @@
     </main>
     <footer class="footer">
         <div class="container">
-            <section class="footer__lists">
+            <div class="footer__lists">
                 <ul class="footer__list">
                     <li class="footer__item-title">Помощь</li>
                     <li class="footer__item"><a href="#" class="footer__link">Выбрать квартиру</a></li>
@@ -207,11 +212,11 @@
                     <li class="footer__item"><a href="#" class="footer__link">Карта сайта</a></li>
                     <li class="footer__item"><a href="#" class="footer__link">Реквизиты компании</a></li>
                 </ul>
-            </section>
-            <section class="footer__end">
+            </div>
+            <div class="footer__end">
                 <a href="#" class="footer__logo"><img src="./images/logo.svg" alt="" class="footer__img"></a>
                 <p class="footer__author">© 2022 Brighton stays, Inc.</p>
-            </section>
+            </div>
         </div>
     </footer>
 </body>

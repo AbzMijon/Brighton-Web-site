@@ -7,6 +7,13 @@ article,aside,audio,canvas,command,datalist,details,embed,figcaption,figure,foot
 :root {
     --main__color: #ffffff;
 }
+:root {
+    --columns: 33.333%;
+    --padding-left: -15px;
+    --padding-right: -15px;
+    --margin-left: 15px;
+    --margin-right: 15px;
+}
 
 /*Defolt settings , fonts , size and e.t.c. before work*/
 * {
@@ -30,6 +37,11 @@ input,
 textarea {
     background-color: inherit;
     resize: none;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
 }
 
 h1,
@@ -76,17 +88,15 @@ h6,
     font-size: 12px;
     line-height: 16px;
 }
-
-.btn--check {
+.btn--check, .btn--cross {
     display: inline-block;
     width: 34px;
     height: 34px;
+    border: none;
     outline: none;
-    background-color: #000;
     font-size: 15px;
-    line-height: 22px;
+    line-height: 20px;
     font-weight: 600;
-    color: #fff;
     text-decoration: none;
     text-align: center;
     cursor: pointer;
@@ -94,24 +104,14 @@ h6,
     border: 1px solid #C4C4C4;
     transition: all 0.3s cubic-bezier(0,.99,.51,.53);
 }
+.btn--check{
+    background-color: #000;
+    color: #fff;
+}
 
 .btn--cross {
-    display: inline-block;
-    width: 34px;
-    height: 34px;
-    border: none;
-    outline: none;
     background-color: transparent;
-    font-size: 15px;
-    line-height: 20px;
-    font-weight: 600;
     color: #C4C4C4;
-    text-decoration: none;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 50%;
-    border: 1px solid #C4C4C4;
-    transition: all 0.3s cubic-bezier(0,.99,.51,.53);
 }
 
 /*HEADER*/
@@ -239,6 +239,9 @@ h6,
 }
 .notifications__row {
     margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .notifications__card {
@@ -266,22 +269,31 @@ h6,
     padding: 100px 0 20px 0;
 }
 
+.welcome__row {
+    display: flex;
+}
+
 .welcome__card {
     position: relative;
     height: 500px;
+    width: var(--columns);
+    padding-left: var(--padding-left);
+    padding-right: var(--padding-right);
+    margin-right: var(--margin-right);
+    margin-left: var(--margin-left);
     margin-bottom: 20px;
     border-radius: 10px;
 }
 
-.welcome__card--guests {
+.welcome__card:nth-child(1) {
     background: url(/images/helloPictures1.jpg) no-repeat center;
     background-size: cover;
 }
-.welcome__card--calendary {
+.welcome__card:nth-child(2)  {
     background: url(/images/helloPictures2.jpg) no-repeat center;
     background-size: cover;
 }
-.welcome__card--bron {
+.welcome__card:nth-child(3) {
     background: url(/images/helloPictures3.jpg) no-repeat center;
     background-size: cover;
 }
@@ -296,4 +308,68 @@ h6,
     color: #fff;
     text-align: center;
     padding: 20px 60px;
+}
+
+.objects {
+    padding: 20px 0;
+}
+
+.title {
+    margin-bottom: 40px;
+}
+
+.objects__card-titles {
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.objects__data-name {
+    font-size: 12px;
+    color: #767676;
+    text-decoration: underline;
+}
+
+.fa-calculator {
+    font-size: 10px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.fa-sliders {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.objects__card {
+    padding: 30px;
+    border-top: 1px solid #C4C4C4;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 15px;
+}
+
+.objects__card:last-child {
+    border-bottom: 1px solid #C4C4C4;
+}
+
+.objects__img-name {
+    margin-top: 10px;
+}
+.objects__status {
+    border: 1px solid #000000;
+    border-radius: 45px;
+    padding: 5px 10px;
+}
+.objects__price {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+}
+.objects__edit {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: underline;
 }
