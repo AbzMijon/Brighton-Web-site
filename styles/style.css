@@ -319,9 +319,10 @@ h6,
 }
 
 .objects__card-titles {
-    padding: 0 30px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    column-gap: 15px;
+    padding: 0 30px;
 }
 
 .objects__data-name {
