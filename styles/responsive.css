@@ -162,7 +162,7 @@
     }
     .news__img {
         border-radius: 10px 0 0 10px;
-        max-width: 40%;
+        max-width: 25%;
     }
     .news__item-name {
         padding-right: 5px;
@@ -171,6 +171,7 @@
     }
     .news__link {
         display: flex;
+        justify-content: center;
     }
     footer {
         display: none;
