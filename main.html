@@ -78,13 +78,16 @@
                     <h2 class="welcome__title">Приветствуем</h2>
                     <ul class="welcome__row">
                             <li class="welcome__card"><a href="#">
+                                <img src="./images/helloPictures1.jpg" alt="" class="welcome__img">
                                 <h4 class="welcome__card-name">Подготовьтеськ приему первых гостей</h4>
                             </a></li>
                             <li class="welcome__card"><a href="#">
+                                <img src="./images/helloPictures2.jpg" alt="" class="welcome__img">
                                 <h4 class="welcome__card-name">Настройте календарь и расценки</h4>
                             </a></li>
 
                             <li class="welcome__card"><a href="#">
+                                <img src="./images/helloPictures3.jpg" alt="" class="welcome__img">
                                 <h4 class="welcome__card-name">Подтвердите как гости могут бронировать</h4>
                             </a></li>
 
@@ -94,7 +97,7 @@
         </section>
         <section class="objects">
             <div class="container">
-                <h2 class="objects title">Объекты</h2>
+                <h2 class="objects__title">Объекты</h2>
             </div>
             <div class="objects__layot">
                 <div class="container">
@@ -179,55 +182,65 @@
                 <div class="calendary__body">
                     <div class="calendary__data-block">
                             <h3 class="calendary__main-year"> Май 2022 <i class="fa-solid fa-angle-down"></i></h3>
-                        <div class="calendary__number">
-                            <select name="calendaryNumber" id="">
-                                <option value="1">номер 1</option>
-                                <option value="2">номер 2</option>
-                                <option value="3">номер 3</option>
-                                <option value="4">номер 4</option>
-                                <option value="5">номер 5</option>
-                                <option value="6">номер 6</option>
-                                <option value="7">номер 7</option>
-                                <option value="8">номер 8</option>
-                                <option value="9">номер 9</option>
-                                <option value="10">номер 10</option>
-                                <option value="11">номер 11</option>
-                                <option value="12">номер 12</option>
-                                <option value="13">номер 13</option>
-                                <option value="14">номер 14</option>
-                                <option value="15">номер 15</option>
-                                <option value="16">номер 16</option>
-                                <option value="17">номер 17</option>
-                                <option value="18">номер 18</option>
-                                <option value="19">номер 19</option>
-                                <option value="20">номер 20</option>
-                                <option value="21">номер 21</option>
-                                <option value="22">номер 22</option>
-                                <option value="23">номер 23</option>
-                                <option value="24">номер 24</option>
-                                <option value="25">номер 25</option>
-                                <option value="26">номер 26</option>
-                                <option value="27">номер 27</option>
-                                <option value="28">номер 28</option>
-                                <option value="29">номер 29</option>
-                                <option value="30">номер 30</option>
-                            </select>
-                        </div>
-                        <div class="calendary__mounth">
-                            <select name="calendaryMounth" id="">
-                                <option value="1">Май</option>
-                                <option value="2">Июнь</option>
-                                <option value="3">Июль</option>
-                                <option value="4">Август</option>
-                                <option value="5">Сентябрь</option>
-                                <option value="6">Октябрь</option>
-                                <option value="7">Ноябрь</option>
-                                <option value="8">Декабрь</option>
-                                <option value="9">Январь</option>
-                            </select>
-                        </div>
+                            <div class="calendary__wrap-selects">
+                            <div class="calendary__number">
+                                <select name="calendaryNumber" id="">
+                                    <option value="1">номер 1</option>
+                                    <option value="2">номер 2</option>
+                                    <option value="3">номер 3</option>
+                                    <option value="4">номер 4</option>
+                                    <option value="5">номер 5</option>
+                                    <option value="6">номер 6</option>
+                                    <option value="7">номер 7</option>
+                                    <option value="8">номер 8</option>
+                                    <option value="9">номер 9</option>
+                                    <option value="10">номер 10</option>
+                                    <option value="11">номер 11</option>
+                                    <option value="12">номер 12</option>
+                                    <option value="13">номер 13</option>
+                                    <option value="14">номер 14</option>
+                                    <option value="15">номер 15</option>
+                                    <option value="16">номер 16</option>
+                                    <option value="17">номер 17</option>
+                                    <option value="18">номер 18</option>
+                                    <option value="19">номер 19</option>
+                                    <option value="20">номер 20</option>
+                                    <option value="21">номер 21</option>
+                                    <option value="22">номер 22</option>
+                                    <option value="23">номер 23</option>
+                                    <option value="24">номер 24</option>
+                                    <option value="25">номер 25</option>
+                                    <option value="26">номер 26</option>
+                                    <option value="27">номер 27</option>
+                                    <option value="28">номер 28</option>
+                                    <option value="29">номер 29</option>
+                                    <option value="30">номер 30</option>
+                                </select>
+                            </div>
+                            <div class="calendary__mounth">
+                                <select name="calendaryMounth" id="">
+                                    <option value="1">Май</option>
+                                    <option value="2">Июнь</option>
+                                    <option value="3">Июль</option>
+                                    <option value="4">Август</option>
+                                    <option value="5">Сентябрь</option>
+                                    <option value="6">Октябрь</option>
+                                    <option value="7">Ноябрь</option>
+                                    <option value="8">Декабрь</option>
+                                    <option value="9">Январь</option>
+                                </select>
+                            </div>
+                    </div>
+                    <i class="calendary__settings-mobile fa-solid fa-sliders"></i>
                     </div>
                     <div class="calendary__days">
+                        <div class="calendary__week-day">Пн</div>
+                        <div class="calendary__week-day">Вт</div>
+                        <div class="calendary__week-day">Ср</div>
+                        <div class="calendary__week-day">Чт</div>
+                        <div class="calendary__week-day">Пт</div>
+                        <div class="calendary__week-day">Сб</div>
+                        <div class="calendary__week-day">Вс</div>
                         <div class="calendary__item-box">
                             <div class="calendary__num">1</div>
                             <div class="calendary__price">907 ₽</div>
@@ -377,15 +390,19 @@
                 <h2 class="news__title">Новости и советы по приему гостей</h2>
                 <ul class="news__row">
                     <li class="news__item"><a href="#" class="news__link">
+                        <img src="./images/news1.jpg" alt="" class="news__img">
                         <h3 class="news__item-name">Привлеките внимание к объявлению</h3>
                     </a></li>
                     <li class="news__item"><a href="#" class="news__link">
+                        <img src="./images/news2.jpg" alt="" class="news__img">
                         <h3 class="news__item-name">Привлеките внимание к объявлению</h3>
                     </a></li>
                     <li class="news__item"><a href="#" class="news__link">
+                        <img src="./images/news3.jpg" alt="" class="news__img">
                         <h3 class="news__item-name">Привлеките внимание к объявлению</h3>
                     </a></li>
                     <li class="news__item"><a href="#" class="news__link">
+                        <img src="./images/news4.jpg" alt="" class="news__img">
                         <h3 class="news__item-name">Привлеките внимание к объявлению</h3>
                     </a></li>
                 </ul>

@@ -6,14 +6,6 @@ article,aside,audio,canvas,command,datalist,details,embed,figcaption,figure,foot
 /*Root for change the base color*/
 :root {
     --main__color: #ffffff;
-    --columns1: 100%;
-    --columns2: 50%;
-    --columns3: 33.333%;
-    --columns4: 22%;
-    --padding-left: -10px;
-    --padding-right: -10px;
-    --margin-left: 10px;
-    --margin-right: 10px;
 }
 
 /*Defolt settings , fonts , size and e.t.c. before work*/
@@ -171,7 +163,11 @@ h6,
     cursor: pointer;
     border: 1px solid #BDBDBD;
     border-radius: 50%;
-    padding: 10px 15px;
+    width: 46px;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 20px;
 }
 
@@ -253,9 +249,9 @@ h6,
 }
 .notifications__row {
     margin-bottom: 50px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 31px;
 }
 
 .notifications__card {
@@ -280,48 +276,35 @@ h6,
 
 /*Welcome SECTION*/
 .welcome {
-    padding: 100px 0 20px 0;
+    padding: 100px 0;
 }
 
 .welcome__row {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
 }
 
 .welcome__card {
     position: relative;
-    height: 500px;
-    width: var(--columns3);
-    padding-left: var(--padding-left);
-    padding-right: var(--padding-right);
-    margin-right: var(--margin-right);
-    margin-left: var(--margin-left);
     margin-bottom: 20px;
     border-radius: 10px;
 }
 
-.welcome__card:nth-child(1) {
-    background: url(/images/helloPictures1.jpg) no-repeat center;
-    background-size: cover;
-}
-.welcome__card:nth-child(2)  {
-    background: url(/images/helloPictures2.jpg) no-repeat center;
-    background-size: cover;
-}
-.welcome__card:nth-child(3) {
-    background: url(/images/helloPictures3.jpg) no-repeat center;
-    background-size: cover;
+.welcome__img {
+    width: 100%;
 }
 
 .welcome__card-name {
     position: absolute;
-    bottom: 0;
+    bottom: -60px;
     left: 0;
     background-color: #262626;
     border-radius: 0px 0px 10px 10px;
     width: 100%;
     color: #fff;
     text-align: center;
-    padding: 20px 60px;
+    padding: 24px 60px;
 }
 
 .objects {
@@ -372,9 +355,13 @@ h6,
     margin-top: 10px;
 }
 .objects__status {
+    text-align: center;
+    appearance: none;
     border: 1px solid #000000;
     border-radius: 45px;
-    padding: 5px 10px;
+    padding: 5px 30px 5px 10px;
+    background: url(/images/chevron.svg) no-repeat;
+    background-position: calc(100% - 15px) 50%;
 }
 .objects__price {
     font-weight: 400;
@@ -389,51 +376,30 @@ h6,
 }
 
 .news {
-    padding: 70px 0 100px 0;
+    padding: 70px 0 200px 0;
     background-color: #0C0C0C;
     color: #fff;
 }
 
 .news__row {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
 }
 .news__item {
-    position: relative;
-    height: 400px;
-    width: var(--columns4);
-    padding-left: var(--padding-left);
-    padding-right: var(--padding-right);
-    margin-left: var(--margin-left);
-    margin-right: var(--margin-right);
-    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
-.news__item:nth-child(1) {
-    background: url(/images/news1.jpg) no-repeat center;
-    background-size: cover;
-}
-.news__item:nth-child(2) {
-    background: url(/images/news2.jpg) no-repeat center;
-    background-size: cover;
-}
-.news__item:nth-child(3) {
-    background: url(/images/news3.jpg) no-repeat center;
-    background-size: cover;
-}
-.news__item:nth-child(4) {
-    background: url(/images/news4.jpg) no-repeat center;
-    background-size: cover;
+.news__img {
+    width: 100%;
+    border-radius: 12px 12px 0 0;
 }
 
 .news__link {
     color: #fff;
 }
 .news__item-name {
-    position: absolute;
-    left: 0;
-    bottom: 0;
     width: 100%;
     padding: 30px 65px 30px 20px;
     background-color: #262626;
@@ -486,13 +452,14 @@ h6,
 }
 
 .calendary__body {
-    border: 1px solid #C4C4C4;
     display: grid;
     grid-template-columns:repeat(3, 1fr);
     grid-template-rows: auto;
 }
 
 .calendary__data-block {
+    border-top: 1px solid #c4c4c4;
+    border-left: 1px solid #c4c4c4;;
     grid-column: 1/3;
     grid-row: 1/2;
     padding: 15px 15px 45px 30px;
@@ -500,8 +467,8 @@ h6,
 
 .calendary__main-year {
     margin-bottom: 30px;
-    font-size: 32px;
-    line-height: 41px;
+    font-size: 30px;
+    line-height: 40px;
 }
 
 .calendary__main-year > .fa-angle-down {
@@ -514,9 +481,12 @@ h6,
 }
 
 .calendary__number select , .calendary__mounth select {
+    appearance: none;
     padding: 10px 15px;
     border: 0.5px solid #073937;
     border-radius: 10px;
+    background: url(/images/chevron.svg) no-repeat;
+    background-position: calc(100% - 10px) 50%;
 }
 
 .calendary__mounth {
@@ -533,15 +503,14 @@ h6,
 
 .calendary__item-box {
     cursor: pointer;
-    border: 1px solid #C4C4C4;
+    border: 0.5px solid #C4C4C4;
     width: 100%;
-    height: 130px;
     color: #606060;
     padding: 10px 15px;
 }
 
 .calendary__item-box:hover {
-    border: 3px solid #000;
+    background-color: #dddddd;
 }
 
 .calendary__num {
@@ -553,23 +522,30 @@ h6,
 }
 
 .calendary__info {
+    border-top: 1px solid #c4c4c4;
+    border-right: 1px solid #c4c4c4;;
+    border-left: 1px solid #c4c4c4;
     grid-column: 3/4;
     grid-row: 1/3;
 }
 
 .calendary__first-block,.calendary__second-block,.calendary__third-block,.calendary__fouth-block {
-    padding: 25px 20px;
-    border: 1px solid #C4C4C4;
+    border-bottom: 1px solid #C4C4C4;
+    padding: 30px 17px 30px 17px;
 }
 
 .calendary__first-block {
-    padding: 90px 10px 60px 20px;
+    padding: 88px 10px 60px 20px;
+}
+
+.calendary__fouth-block {
+    padding-bottom: 17px;
 }
 
 .calendary__today-title {
     font-size: 24px;
-    line-height: 31px;
-    margin-bottom: 40px;
+    line-height: 25px;
+    margin-bottom: 37px;
 }
 
 .calendary__wrap-isfree {
@@ -584,7 +560,7 @@ h6,
 }
 
 .calendary__price-title {
-    margin-bottom: 20px;
+    margin-bottom: 19px;
 }
 
 .calendary__price-selected {
@@ -600,8 +576,21 @@ h6,
 .calendary__settings-text {
     font-size: 10px;
     color: #8B8B8B;
-    line-height: 12px;
+    line-height: 10px;
     margin-bottom: 30px;
+}
+
+.calendary__settings-mobile {
+    display: none;
+}
+
+.calendary__week-day {
+    padding-left: 10px;
+    color: #606060;
+}
+
+.calendary__week-day:first-child {
+    border-left: 1px solid #c4c4c4;
 }
 
 .calendary__settings-btn {
